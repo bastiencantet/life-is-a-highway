@@ -1,7 +1,5 @@
 import Image from "next/image";
-import {Button} from "@/components/generic/buttons/button";
-import {NavbarIconLink} from "@/components/navbar/navbarIcon";
-import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
+import {LinkButton} from "@/components/generic/buttons/link-button";
 
 export function Hero() {
   return (
@@ -11,8 +9,8 @@ export function Hero() {
             Hello 👋 I'm Bastien CANTET
           </h1>
             <div className={"flex gap-4 mt-4"}>
-                <Button>My Projects</Button>
-                <Button>Contact Me</Button>
+                <LinkButton href={'/'}>My Projects</LinkButton>
+                <LinkButton href={'/'}>Contact Me</LinkButton>
             </div>
         </div>
         <div className={'flex justify-center items-center'}>

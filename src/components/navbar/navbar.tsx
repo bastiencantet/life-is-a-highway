@@ -3,6 +3,7 @@ import {Button} from "@/components/generic/buttons/button";
 import Link from "next/link";
 import {NavbarIconLink} from "@/components/navbar/navbarIcon";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import {LinkButton} from "@/components/generic/buttons/link-button";
 
 export function Navbar() {
     return (
@@ -18,9 +19,9 @@ export function Navbar() {
                     </Link>
                     </div>
                     <div className="flex items-center gap-6">
-                        <NavbarIconLink icon={<AiFillLinkedin size={25}/>} hoverTitle={'Linkedin'} href={"/"} />
-                        <NavbarIconLink icon={<AiFillGithub size={25}/>} hoverTitle={'Github'} href={"/"} />
-                        <Button>Contact Me</Button>
+                        <NavbarIconLink icon={<AiFillLinkedin size={25}/>} hoverTitle={'Linkedin'} href={"https://www.linkedin.com/in/bastien-cantet-696a07206/"} newTab/>
+                        <NavbarIconLink icon={<AiFillGithub size={25}/>} hoverTitle={'Github'} href={"https://github.com/bastiencantet"} newTab/>
+                        <LinkButton href={'/'}>Contact Me</LinkButton>
                     </div>
                 </div>
             </ContentContainer>

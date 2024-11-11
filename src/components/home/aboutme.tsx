@@ -1,10 +1,14 @@
 import {ContentTitle} from "@/components/generic/content/title";
+import {ColorfulButton} from "@/components/generic/buttons/colorfulbuttons";
+import {AboutMeChoiceButtons} from "@/components/home/about-me-choice-buttons";
+import {AboutMeText} from "@/components/home/about-me-text";
 
 export function Aboutme() {
     return (
-        <div className="flex-col h-splitterscreen w-full min-w-full">
-            <ContentTitle title={"About Me"} />
-            <div className="text-sm">This is the about me section</div>
+        <div className="h-splitterscreen w-full items-start">
+            <ContentTitle title={"About Me"}/>
+            <AboutMeChoiceButtons />
+            <AboutMeText category={"Me"} />
         </div>
     );
 }
