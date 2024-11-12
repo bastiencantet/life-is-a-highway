@@ -1,5 +1,4 @@
 import {ContentTitle} from "@/components/generic/content/title";
-import {ColorfulButton} from "@/components/generic/buttons/colorfulbuttons";
 import {AboutMeChoiceButtons} from "@/components/home/about-me-choice-buttons";
 import {AboutMeText} from "@/components/home/about-me-text";
 
